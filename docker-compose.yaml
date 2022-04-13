@@ -1,0 +1,12 @@
+version: '3.9'
+
+services:
+  discord:
+    container_name: 'discord'
+    build: .
+    networks:
+      - default
+
+networks:
+  default:
+    name: 'pokkne_network'
